@@ -95,6 +95,5 @@ describe("RWA Scenario", () => {
     await submitRequestTransactionButton.click();
     const successAlertText = await $('div[data-test="alert-bar-success"]');
     await expect(successAlertText).toHaveText("Transaction Submitted!");
-    await delay(3000);
   });
 });
